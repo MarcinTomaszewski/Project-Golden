@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/_variables.scss",
+        "../sass/_mixins.scss",
+        "../sass/_global.scss",
+        "../sass/_nav-sm.scss",
+        "../sass/_menu-sm.scss",
+        "../sass/_header.scss",
+        "../sass/_services.scss",
+        "../sass/_portfolio.scss",
+        "../sass/_about.scss",
+        "../sass/_team.scss",
+        "../sass/_logos.scss",
+        "../sass/_contact.scss",
+        "../sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
