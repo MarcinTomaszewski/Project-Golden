@@ -1,0 +1,28 @@
+// Belka nawigacyjna z ikoną hamburgera
+.nav-sm {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #000;
+    z-index: 1;
+
+    .ham {
+        position: absolute;
+        right: 5vw;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 35px;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover i {
+            color: #fed136;
+        }
+    }
+}

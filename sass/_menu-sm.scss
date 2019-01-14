@@ -1,0 +1,35 @@
+// Menu na urządzenia mobilne
+.menu-sm {
+    position: fixed;
+    left: 0;
+    top: -195px;
+    right: 0;
+    transition: .3s;
+
+    ul {
+        list-style: none;
+
+        li {
+
+            a {
+                display: block;
+                padding: 10px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #fed136;
+                font-family: 'Montserrat',
+                    sans-serif;
+
+                &:hover {
+                    background-color: #fedf36;
+                    color: #444;
+                }
+            }
+        }
+    }
+}
+
+.menu-sm.active {
+    top: 50px;
+}
