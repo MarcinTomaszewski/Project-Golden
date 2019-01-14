@@ -10,10 +10,14 @@
         list-style: none;
 
         li {
+            &:last-child a {
+                border-bottom: none;
+            }
 
             a {
                 display: block;
                 padding: 10px 25px;
+                border-bottom: 1px solid #fff;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: #fff;

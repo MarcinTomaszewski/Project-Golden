@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .nav-sm {
@@ -19,7 +19,7 @@
   right: 5vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 35px;
   height: 35px;
   border-radius: 5px;
@@ -31,6 +31,10 @@
 }
 
 .nav-sm .ham:hover i {
+  color: #fed136;
+}
+
+.nav-sm .ham.active {
   color: #fed136;
 }
 
@@ -47,15 +51,19 @@
   list-style: none;
 }
 
+.menu-sm ul li:last-child a {
+  border-bottom: none;
+}
+
 .menu-sm ul li a {
   display: block;
   padding: 10px 25px;
+  border-bottom: 1px solid #fff;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background-color: #fed136;
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu-sm ul li a:hover {
@@ -66,5 +74,4 @@
 .menu-sm.active {
   top: 50px;
 }
-
 /*# sourceMappingURL=style.css.map */
