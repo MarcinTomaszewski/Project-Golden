@@ -5,16 +5,40 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Droid-Serif;
+  src: url(../fonts/droid-serif/DroidSerif-Regular.ttf), url(../fonts/droid-serif/DroidSerif-Italic.ttf), url(../fonts/droid-serif/DroidSerif-BoldItalic.ttf), url(../fonts/droid-serif/DroidSerif-Bold.ttf);
+}
+
+@media (min-width: 1025px) {
+  .nav-sm-wrapper {
+    display: none;
+  }
+}
+
 .nav-sm {
   position: fixed;
   left: 0;
   right: 0;
   height: 50px;
   background-color: #000;
-  z-index: 1;
+  z-index: 2;
 }
 
-.nav-sm .ham {
+.nav-sm .logo-sm {
+  position: absolute;
+  left: 5vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nav-sm .logo-sm img {
+  display: block;
+  height: 20px;
+}
+
+.nav-sm .ham-sm {
   position: absolute;
   right: 5vw;
   top: 50%;
@@ -30,11 +54,11 @@
   cursor: pointer;
 }
 
-.nav-sm .ham:hover i {
+.nav-sm .ham-sm:hover i {
   color: #fed136;
 }
 
-.nav-sm .ham.active {
+.nav-sm .ham-sm.active {
   color: #fed136;
 }
 
@@ -45,6 +69,7 @@
   right: 0;
   -webkit-transition: .15s;
   transition: .15s;
+  z-index: 1;
 }
 
 .menu-sm ul {
@@ -63,6 +88,7 @@
   text-transform: uppercase;
   color: #fff;
   background-color: #fed136;
+  font-size: 12px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -73,5 +99,177 @@
 
 .menu-sm.active {
   top: 50px;
+}
+
+header {
+  position: relative;
+  padding-top: 50px;
+}
+
+header .header-bgi {
+  display: block;
+  width: 100%;
+}
+
+header .nav-xl {
+  display: none;
+}
+
+header .title {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .title h2 {
+  padding-top: 35px;
+  font-size: 14px;
+  font-family: Droid-Serif, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+
+header .title h1 {
+  padding: 10px 0 15px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
+}
+
+header .title button {
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 1px;
+  background-color: #fed136;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .title button:hover {
+  color: #fed136;
+  background-color: #fff;
+}
+
+.services h2,
+.services h3,
+.services p,
+.services a {
+  text-align: center;
+}
+
+.services .container {
+  padding: 20px 30px;
+}
+
+.services .container h2 {
+  padding: 20px 0 5px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px;
+}
+
+.services .container p {
+  padding-bottom: 20px;
+  font-family: Droid-Serif, sans-serif;
+  color: #777777;
+}
+
+.services .container .articles article a {
+  display: block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 3px solid #fed136;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.services .container .articles article a:hover {
+  background-color: #fed136;
+}
+
+.services .container .articles article a:hover i {
+  color: #fff;
+}
+
+.services .container .articles article a i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 24px;
+  line-height: 68px;
+  color: #fed136;
+}
+
+.services .container .articles article h3 {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services .container .articles article p {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #777777;
+  letter-spacing: -0.35px;
+}
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio .container {
+  padding: 20px 10px;
+}
+
+.portfolio .container h2 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px;
+  color: #222222;
+}
+
+.portfolio .container p {
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: Droid-Serif, sans-serif;
+  color: #777777;
+  font-style: italic;
+}
+
+.portfolio .container .articles div article img {
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio .container .articles div article h3 {
+  padding-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  letter-spacing: -0.45px;
+}
+
+.portfolio .container .articles div article p {
+  text-align: center;
+  color: #737373;
+  font-family: Droid-Serif, sans-serif;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

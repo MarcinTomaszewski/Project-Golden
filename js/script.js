@@ -1,5 +1,5 @@
 (function () {
-    const btnHamSm = document.querySelector('.ham');
+    const btnHamSm = document.querySelector('.ham-sm');
     const menuSm = document.querySelector('.menu-sm');
 
     btnHamSm.addEventListener('click', function () {

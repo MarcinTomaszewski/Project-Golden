@@ -1,0 +1,52 @@
+.portfolio {
+    background-color: #f7f7f7;
+
+    .container {
+        padding: 20px 10px;
+
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -1px;
+            color: #222222;
+        }
+
+        p {
+            padding-bottom: 40px;
+            text-align: center;
+            font-family: Droid-Serif, sans-serif;
+            color: #777777;
+            font-style: italic;
+        }
+
+        .articles {
+            div {
+                article {
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    h3 {
+                        padding-top: 5px;
+                        text-align: center;
+                        font-family: 'Montserrat', sans-serif;
+                        color: #333333;
+                        letter-spacing: -0.45px;
+                    }
+
+                    p {
+                        text-align: center;
+                        color: #737373;
+                        font-family: Droid-Serif, sans-serif;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

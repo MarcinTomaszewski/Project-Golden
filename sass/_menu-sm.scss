@@ -5,6 +5,7 @@
     top: -199px;
     right: 0;
     transition: .15s;
+    z-index: 1;
 
     ul {
         list-style: none;
@@ -22,6 +23,7 @@
                 text-transform: uppercase;
                 color: #fff;
                 background-color: #fed136;
+                font-size: 12px;
                 font-family: 'Montserrat',
                     sans-serif;
 
