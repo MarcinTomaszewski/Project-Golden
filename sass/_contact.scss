@@ -1,0 +1,131 @@
+.contact {
+    position: relative;
+    min-height: 840px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.contact-img {
+    position: absolute;
+    top: 65%;
+    left: -30%;
+    transform: translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+.contact-title {
+    padding-top: 110px;
+    padding-bottom: 23px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.contact-desc {
+    padding: 0 10px 10px;
+    text-align: center;
+    font-family: Droid-Serif, sans-serif;
+    font-style: italic;
+    color: #777777;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.contact-element {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.contact-input {
+    height: 50px;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    color: #bbbbbb;
+
+}
+
+.contact-textarea {
+    flex-basis: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    color: #bbbbbb;
+}
+
+.contact-button {
+    align-self: center;
+    width: 140px;
+    height: 46px;
+    border-style: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fed136;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+        background-color: #fff;
+        color: #fed136;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-img {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+    }
+
+    .contact-desc {
+        padding-bottom: 75px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-element {
+        flex-basis: 50%;
+        justify-content: space-between;
+        height: 210px;
+    }
+
+    .contact-input {
+        margin-top: 0;
+    }
+
+    .contact-button {
+        margin: 0 auto;
+        margin-top: 31px;
+    }
+}

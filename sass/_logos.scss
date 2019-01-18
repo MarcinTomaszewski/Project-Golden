@@ -1,0 +1,37 @@
+.logos-wrap {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo-element {
+    flex-basis: 45%;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+@media (min-width: 640px) {
+    .logos-wrap {
+        padding: 50px 0;
+    }
+
+    .logo-element {
+        flex-basis: 25%;
+    }
+
+    .logo-img {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}

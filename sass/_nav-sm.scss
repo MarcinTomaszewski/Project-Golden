@@ -1,44 +1,51 @@
-// Belka nawigacyjna z ikoną hamburgera
+// Belka nawigacyjna z ikoną hamburgera na urządzenia mobilne
 .nav-sm {
     position: fixed;
     left: 0;
     right: 0;
     height: 50px;
     background-color: #000;
-    z-index: 2;
+    z-index: 3;
+}
 
-    .logo-sm {
-        position: absolute;
-        left: 5vw;
-        top: 50%;
-        transform: translateY(-50%);
+.nav-sm-logo-link {
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
 
-        & img {
-            display: block;
-            height: 20px;
-        }
+    & .nav-sm-logo-foto {
+        display: block;
+        height: 20px;
+    }
+}
+
+.nav-sm-ham {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover .nav-sm-icon {
+        color: #fed136;
     }
 
-    .ham-sm {
-        position: absolute;
-        right: 5vw;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35px;
-        height: 35px;
-        border-radius: 5px;
-        font-size: 24px;
-        text-align: center;
-        line-height: 35px;
-        color: #fff;
-        cursor: pointer;
+    &.active {
+        color: #fed136
+    }
+}
 
-        &:hover i {
-            color: #fed136;
-        }
 
-        &.active {
-            color: #fed136
-        }
+@media (min-width: 1025px) {
+    .nav-sm-wrapper {
+        display: none;
     }
 }

@@ -19,62 +19,64 @@
         <!-- Nawigacja na urządzenia mobilne -->
         <div class="nav-sm-wrapper">
             <div class="nav-sm">
-                <a href="#" class="logo-sm"><img src="img/logo.png" alt="Logo firmy"></a>
-                <div class="ham-sm"><i class="fas fa-bars"></i></div>
+                <a href="#" class="nav-sm-logo-link"><img class="nav-sm-logo-foto" src="img/logo.png" alt="Logo firmy"></a>
+                <div class="nav-sm-ham"><i class="nav-sm-icon fas fa-bars"></i></div>
             </div>
             <nav class="menu-sm">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="menu-sm-list">
+                    <li class="menu-sm-element"><a class="menu-sm-link" href="#">Home</a></li>
+                    <li class="menu-sm-element"><a class="menu-sm-link" href="#">Services</a></li>
+                    <li class="menu-sm-element"><a class="menu-sm-link" href="#">Portfolio</a></li>
+                    <li class="menu-sm-element"><a class="menu-sm-link" href="#">About</a></li>
+                    <li class="menu-sm-element"><a class="menu-sm-link" href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <!-- Section header -->
-        <header>
-            <img class="header-bgi" src="img/header-bgi-320-169.jpg" alt="Gadgets">
-            <nav class="nav-xl">
-                <a href="#" class="logo-xl"><img src="img/logo.png" alt="Logo firmy"></a>
-                <ul class="menu-xl">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+        <header class="header">
+            <img class="header-bgi" src="" alt="Gadgets">
+            <nav class="header-nav-xl">
+                <a href="#" class="header-logo-xl"><img class="header-img-logo-xl" src="img/logo.png" alt="Logo firmy"></a>
+                <ul class="menu-xl-list">
+                    <li class="menu-xl-element"><a class="menu-xl-link" href="#">Home</a></li>
+                    <li class="menu-xl-element"><a class="menu-xl-link" href="#">Services</a></li>
+                    <li class="menu-xl-element"><a class="menu-xl-link" href="#">Portfolio</a></li>
+                    <li class="menu-xl-element"><a class="menu-xl-link" href="#">About</a></li>
+                    <li class="menu-xl-element"><a class="menu-xl-link" href="#">Contact</a></li>
                 </ul>
             </nav>
-            <div class="title">
-                <h2>Welcome To Our Studio!</h2>
-                <h1>It’s nice to Meet you</h1>
-                <button>Tell Me More</button>
+            <div class="header-shadow">
+                <div class="header-wrap-title">
+                    <h2 class="header-title-sm">Welcome To Our Studio!</h2>
+                    <h1 class="header-title-xl">It’s nice to Meet you</h1>
+                    <button class="header-btn">Tell Me More</button>
+                </div>
             </div>
         </header>
         <!-- Section services -->
         <section class="services">
-            <div class="container">
-                <h2>Services</h2>
-                <p>Proin iaculis purus consequat sem cure.</p>
-                <div class="articles">
-                    <article>
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <h3>E-Commerce</h3>
-                        <p>Proin iaculis purus consequat sem cure
+            <div class="services-wrap">
+                <h2 class="services-title">Services</h2>
+                <p class="services-desc">Proin iaculis purus consequat sem cure.</p>
+                <div class="services-articles">
+                    <article class="services-element">
+                        <a class="services-content-link" href="#"><i class="services-content-icon fas fa-shopping-basket"></i></a>
+                        <h3 class="services-content-title">E-Commerce</h3>
+                        <p class="services-content-desc">Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
                             aenean rhoncus posuere odio in tincidunt.</p>
                     </article>
-                    <article>
-                        <a href="#"><i class="fas fa-laptop-code"></i></a>
-                        <h3>Responsive Web</h3>
-                        <p>Proin iaculis purus consequat sem cure
+                    <article class="services-element">
+                        <a class="services-content-link" href="#"><i class="services-content-icon fas fa-laptop-code"></i></a>
+                        <h3 class="services-content-title">Responsive Web</h3>
+                        <p class="services-content-desc">Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
                             aenean rhoncus posuere odio in tincidunt.</p>
                     </article>
-                    <article>
-                        <a href="#"><i class="fas fa-lock"></i></a>
-                        <h3>Web Security</h3>
-                        <p>Proin iaculis purus consequat sem cure
+                    <article class="services-element">
+                        <a class="services-content-link" href="#"><i class="services-content-icon fas fa-lock"></i></a>
+                        <h3 class="services-content-title">Web Security</h3>
+                        <p class="services-content-desc">Proin iaculis purus consequat sem cure
                             digni ssim. Donec porttitora entum suscipit
                             aenean rhoncus posuere odio in tincidunt.</p>
                     </article>
@@ -83,42 +85,54 @@
         </section>
         <!-- Section portfolio -->
         <section class="portfolio">
-            <div class="container">
-                <h2>Our portfolio</h2>
-                <p>Proin iaculis purus consequat sem cure.</p>
-                <div class="articles">
-                    <div>
-                        <article>
-                            <img src="img/portfolio-1.jpg" alt="Foto">
-                            <h3>Ebony & Ivory</h3>
-                            <p>Branding</p>
+            <div class="portfolio-wrap">
+                <h2 class="portfolio-title">Our portfolio</h2>
+                <p class="portfolio-desc">Proin iaculis purus consequat sem cure.</p>
+                <div class="portfolio-articles">
+                    <div class="portfolio-articles-wrap">
+                        <article class="portfolio-content">
+                            <div class="portfolio-img-wrap">
+                                <img class="portfolio-img" src="img/portfolio-1.jpg" alt="Foto">
+                            </div>
+                            <h3 class="portfolio-content-title">Ebony & Ivory</h3>
+                            <p class="portfolio-content-desc">Branding</p>
                         </article>
-                        <article>
-                            <img src="img/portfolio-2.jpg" alt="Foto">
-                            <h3>Smart Stationary</h3>
-                            <p>Print Design</p>
+                        <article class="portfolio-content">
+                            <div class="portfolio-img-wrap">
+                                <img class="portfolio-img" src="img/portfolio-2.jpg" alt="Foto">
+                            </div>
+                            <h3 class="portfolio-content-title">Smart Stationary</h3>
+                            <p class="portfolio-content-desc">Print Design</p>
                         </article>
-                        <article>
-                            <img src="img/portfolio-3.jpg" alt="Foto">
-                            <h3>Clever Poster</h3>
-                            <p>Print Design</p>
+                        <article class="portfolio-content">
+                            <div class="portfolio-img-wrap">
+                                <img class="portfolio-img" src="img/portfolio-3.jpg" alt="Foto">
+                            </div>
+                            <h3 class="portfolio-content-title">Clever Poster</h3>
+                            <p class="portfolio-content-desc">Print Design</p>
                         </article>
                     </div>
-                    <div>
-                        <article>
-                            <img src="img/portfolio-4.jpg" alt="Foto">
-                            <h3>Vinyl Record</h3>
-                            <p>Product Mock-Up</p>
+                    <div class="portfolio-articles-wrap">
+                        <article class="portfolio-content">
+                            <div class="portfolio-img-wrap">
+                                <img class="portfolio-img" src="img/portfolio-4.jpg" alt="Foto">
+                            </div>
+                            <h3 class="portfolio-content-title">Vinyl Record</h3>
+                            <p class="portfolio-content-desc">Product Mock-Up</p>
                         </article>
-                        <article>
-                            <img src="img/portfolio-5.jpg" alt="Foto">
-                            <h3>Treehouse Template</h3>
-                            <p>Web Design</p>
+                        <article class="portfolio-content">
+                            <div class="portfolio-img-wrap">
+                                <img class="portfolio-img" src="img/portfolio-5.jpg" alt="Foto">
+                            </div>
+                            <h3 class="portfolio-content-title">Treehouse Template</h3>
+                            <p class="portfolio-content-desc">Web Design</p>
                         </article>
-                        <article>
-                            <img src="img/portfolio-6.jpg" alt="Foto">
-                            <h3>Burned Logo</h3>
-                            <p>Branding</p>
+                        <article class="portfolio-content">
+                            <div class="portfolio-img-wrap">
+                                <img class="portfolio-img" src="img/portfolio-6.jpg" alt="Foto">
+                            </div>
+                            <h3 class="portfolio-content-title">Burned Logo</h3>
+                            <p class="portfolio-content-desc">Branding</p>
                         </article>
                     </div>
                 </div>
@@ -126,10 +140,178 @@
             </div>
         </section>
         <!-- Section about -->
+        <section class="about">
+            <div class="about-main-wrap">
+                <h2 class="about-title">About Us</h2>
+                <p class="about-desc">Proin iaculis purus consequat sem cure.</p>
+                <div class="about-element-wrap">
+                    <div class="about-element">
+                        <img class="about-content-img" src=" img/about-1.jpg" alt="Foto">
+                        <article class="about-content">
+                            <h3 class="about-content-title-xl">July 2010</h3>
+                            <h3 class="about-content-title-sm">Our Humble Beginnings</h3>
+                            <p class="about-content-desc">Proin iaculis purus consequat sem cure
+                                digni ssim. Donec porttitora entum suscipit
+                                aenean rhoncus posuere odio in tincidunt. Proin
+                                iaculis purus consequat sem cure digni
+                                ssim. Donec porttitora entum suscipit.</p>
+                        </article>
+                    </div>
+                    <div class="about-element">
+                        <img class="about-content-img" src="img/about-2.jpg" alt="Foto">
+                        <article class="about-content">
+                            <h3 class="about-content-title-xl">January 2011</h3>
+                            <h3 class="about-content-title-sm">Facing Startup Battles</h3>
+                            <p class="about-content-desc">Proin iaculis purus consequat sem cure
+                                digni ssim. Donec porttitora entum suscipit
+                                aenean rhoncus posuere odio in tincidunt. Proin
+                                iaculis purus consequat sem cure digni
+                                ssim. Donec porttitora entum suscipit aenean
+                                rhoncus posuere odio in tincidunt.</p>
+                        </article>
+                    </div>
+                    <div class="about-element">
+                        <img class="about-content-img" src="img/about-3.jpg" alt="Foto">
+                        <article class="about-content">
+                            <h3 class="about-content-title-xl">December 2012</h3>
+                            <h3 class="about-content-title-sm">Enter The Dark Days</h3>
+                            <p class="about-content-desc">Proin iaculis purus consequat sem cure
+                                digni ssim. Donec porttitora entum suscipit
+                                aenean rhoncus posuere odio in tincidunt. Proin
+                                iaculis purus consequat sem cure digni.</p>
+                        </article>
+                    </div>
+                    <div class="about-element">
+                        <img class="about-content-img" src="img/about-4.jpg" alt="Foto">
+                        <article class="about-content">
+                            <h3 class="about-content-title-xl">february 2014</h3>
+                            <h3 class="about-content-title-sm">Our Triumph</h3>
+                            <p class="about-content-desc">Proin iaculis purus consequat sem cure
+                                digni ssim. Donec porttitora entum suscipit
+                                aenean rhoncus posuere odio in tincidunt. Proin
+                                iaculis purus consequat sem cure digni
+                                ssim. Donec porttitora entum suscipit aenean.</p>
+                        </article>
+                    </div>
+                    <div class="about-element">
+                        <div class="about-circle">
+                            <div class="about-circle-content">
+                                <p class="about-circle-desc">Our</p>
+                                <p class="about-circle-desc">Story</p>
+                                <p class="about-circle-desc">Continues</p>
+                                <P class="about-circle-desc">...</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Section  team-->
+        <section class="team">
+            <div class="team-main-wrap">
+                <h2 class="team-title">our amazing team</h2>
+                <p class="team-desc">Proin iaculis purus consequat sem cure.</p>
+                <div class="team-wrap">
+                    <div class="team-element">
+                        <div class="team-img-wrap">
+                            <img class="team-img" src="img/team-1.jpeg" alt="">
+                            <p class="team-img-desc">Marketer</p>
+                        </div>
+                        <h3 class="team-element-name">Kimberly Thompson</h3>
+                        <p class="team-element-prof">Marketer</p>
+                        <div class="team-icon-wrap">
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-twitter"></i></a>
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-facebook-f"></i></a>
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-element">
+                        <div class="team-img-wrap">
+                            <img class="team-img" src="img/team-2.jpeg" alt="">
+                            <p class="team-img-desc">Coder</p>
+                        </div>
+                        <h3 class="team-element-name">Rico Massimo</h3>
+                        <p class="team-element-prof">Coder</p>
+                        <div class="team-icon-wrap">
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-twitter"></i></a>
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-facebook-f"></i></a>
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-element">
+                        <div class="team-img-wrap">
+                            <img class="team-img" src="img/team-3.jpeg" alt="">
+                            <p class="team-img-desc">Graphic</p>
+                        </div>
+                        <h3 class="team-element-name">Uku Mason</h3>
+                        <p class="team-element-prof">Graphic Designer</p>
+                        <div class="team-icon-wrap">
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-facebook-f"></i></a>
+                            <a class="team-icon-cont" href="#"><i class="team-icon fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="team-desc">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                    aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+            </div>
+        </section>
         <!-- Section logos -->
+        <section class="logos">
+            <div class="logos-wrap">
+                <div class="logo-element">
+                    <img class="logo-img" src="img/logos-1.png" alt="logo">
+                </div>
+                <div class="logo-element">
+                    <img class="logo-img" src="img/logos-2.png" alt="logo">
+                </div>
+                <div class="logo-element">
+                    <img class="logo-img" src="img/logos-3.png" alt="logo">
+                </div>
+                <div class="logo-element">
+                    <img class="logo-img" src="img/logos-4.png" alt="logo">
+                </div>
+            </div>
+        </section>
         <!-- Section contact -->
+        <section class="contact">
+            <img class="contact-img" src="img/contact-bgi.png" alt="map">
+            <div class="contact-container">
+                <h2 class="contact-title">Contact us</h2>
+                <p class="contact-desc">Proin iaculis purus consequat sem cure.</p>
+                <form action="" class="contact-form">
+                    <div class="contact-element">
+                        <input class="contact-input" type="text" placeholder="your Name *">
+                        <input class="contact-input" type="text" placeholder="your e-mail *">
+                        <input class="contact-input" type="text" placeholder="subject">
+                    </div>
+                    <div class="contact-element">
+                        <textarea class="contact-textarea" name="" id="" cols="" rows="" placeholder="Your message *"></textarea>
+                    </div>
+                    <input class="contact-button" type="submit" value="Send Message"></input>
+                </form>
+            </div>
+        </section>
         <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="footer-desc">© Copyright 2014 FreebiesXpress.com
+                </p>
+                <p class="footer-wrap-icon">
+                    <a class="footer-element-icon" href="#">
+                        <i class="footer-icon fab fa-twitter"></i>
+                    </a>
+                    <a class="footer-element-icon" href="#">
+                        <i class="footer-icon fab fa-facebook-f"></i>
+                    </a>
+                    <a class="footer-element-icon" href="#">
+                        <i class="footer-icon fab fa-pinterest-p"></i>
+                    </a>
+                    <a class="footer-element-icon" href="#">
+                        <i class="footer-icon fab fa-google-plus-g"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
 
     </div>
     <script src="js/script.js"></script>
